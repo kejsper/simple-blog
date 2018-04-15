@@ -1,5 +1,5 @@
 <template>
-  <li class="post-item">
+  <li class="container post-item">
     <router-link :to="'/' + post.id" class="post-item__link">
       [{{ post.id }}] {{ post.title }}
     </router-link>

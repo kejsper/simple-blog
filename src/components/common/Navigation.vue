@@ -1,7 +1,7 @@
 <template>
   <nav class="navbar">
     <div class="container navbar__wrapper">
-      <h1 class="navbar__title">NEOBLOG</h1>
+      <router-link to="/" class="navbar__title">NEOBLOG</router-link>
     </div>
   </nav>
 </template>
@@ -27,9 +27,12 @@ export default {
   font-size: 14px;
 
   &__title {
+    display: inline-block;
     color: $color-white;
     font-weight: 800;
     font-size: 2.5em;
+    text-decoration: none;
+    margin: 15px 0;
   }
 }
 </style>

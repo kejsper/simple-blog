@@ -1,10 +1,10 @@
 import axios from 'axios'
 
-const baseUrl = 'https://jsonplaceholder.typicode.com/'
+const baseUrl = 'https://jsonplaceholder.typicode.com/posts/'
 
 const api = {
   getPosts () {
-    return axios.get(baseUrl + 'posts')
+    return axios.get(baseUrl)
   },
   getPost (id) {
     return axios.get(baseUrl + id)
