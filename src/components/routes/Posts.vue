@@ -1,15 +1,25 @@
 <template>
-  <div class="hello">
-
-  </div>
+  <post-list />
 </template>
 
 <script>
+import { mapActions } from 'vuex'
+import PostList from '../common/PostList'
+
 export default {
-  name: 'HelloWorld',
+  name: 'Posts',
+  components: {
+    PostList
+  },
   data () {
     return {
     }
+  },
+  methods: {
+    ...mapActions(['getPosts'])
+  },
+  mounted () {
+    this.getPosts()
   }
 }
 </script>

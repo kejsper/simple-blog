@@ -1,3 +1,6 @@
+// font import
+@import url('https://fonts.googleapis.com/css?family=Raleway:300,400,500,600,800&subset=latin-ext');
+
 // major imports
 @import 'variables';
 @import 'mixins';
@@ -11,6 +14,7 @@ body, html {
 
 * {
   box-sizing: border-box;
+  font-family: 'Raleway', sans-serif;
 }
 
 // bootstrap container
